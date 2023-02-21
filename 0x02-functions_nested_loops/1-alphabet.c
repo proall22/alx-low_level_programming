@@ -5,13 +5,13 @@
 void print_alphabet_x10(void)
 {
 	int newline = 0;
-	char lCase;
+	char lc;
 
 	while (newline <= 9)
 	{
-		for (lCase = 'a'; lCase <= 'z'; lCase++)
+		for (lc = 'a'; lc <= 'z'; lc++)
 		{
-			_putchar(lCase);
+			_putchar(lc);
 		}
 		_putchar('\n');
 		newline++;
