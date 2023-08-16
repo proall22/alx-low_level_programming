@@ -1,16 +1,18 @@
+#include <stdlib.h>
 #include "dog.h"
 
 /**
-*free_dog - Frees dog
-*@d: dog to be freed
-*
-*/
+ * free_dog - frees dogs
+ * @d: pointer to dog to free
+ *
+ * Return: void
+ */
 void free_dog(dog_t *d)
 {
-if (d == NULL)
-return;
-
-free(d->name);
-free(d->owner);
-free(d);
+	if (d)
+	{
+		free(d->name);
+		free(d->owner);
+		free(d);
+	}
 }
